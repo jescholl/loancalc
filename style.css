@@ -1,0 +1,81 @@
+
+fieldset {
+	width: 400px;
+	margin: 0 auto 0 auto;
+	padding: 0 20px 0 20px;
+}
+legend {
+	padding: 0 2px;
+	font-weight: bold;
+}
+label {
+	width: 200px;
+	display: inline-block;
+	line-height: 1.5em;
+	vertical-align: top;
+	text-align: right;
+}
+fieldset ol {
+	margin: 0;
+	padding: 0;
+}
+fieldset li {
+	width: 400px;
+	list-style: none;
+	padding: 2px;
+	margin: 0;
+}
+
+td,th {
+	padding: 0 10px 0 2px;
+	text-align: right;
+/*	border: 1px solid black;*/
+	margin: 0;
+}
+td {
+	padding-left: 10px;
+	border: 1px solid black;
+}
+
+.Odd, .YrBorderOdd {
+	background-color: #A3CC7A;
+}
+.Even, .YrBorderEven {
+	background-color: #CCFF99;
+}
+.YrBorderOdd td, .YrBorderEven td {
+	border-top: 5px solid black;
+}
+
+/*.LeftJustify {
+  text-align: left;
+}*/
+
+
+
+
+/*#YoRe, #YoRo {
+	background-color: #CCFF99;
+}
+#YeRe, #YeRo {
+	background-color: #A3CC7A;
+}*/
+img {
+	height: 16px;
+	margin: auto 0 auto 8px;
+}
+table {
+  border-collapse: collapse;
+  margin: 50px auto 0 auto;
+  border: 5px solid black;
+}
+/*th {
+	width: 50%;
+	background-color: blue;
+	margin: 0 auto 0 auto;
+}*/
+input {
+	vertical-align: top;
+	margin-left: 20px;
+}
+#preload {display:none;}

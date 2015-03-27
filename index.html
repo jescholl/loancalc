@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="loancalc.js"></script>
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Loan Calculator</legend>
+      <ol>
+        <li>
+          <label for="YRS">Years:</label>
+          <input type="text" id="YRS" onchange="change(this.id)" /><img src="unlocked.ico" alt="lock" title="Unlocked" id="YRSLock" onclick="lockIt(this.id)" />
+        </li>
+        <li>
+          <label for="PPY">Payments/Year:</label>
+          <input type="text" id="PPY" onchange="change(this.id)" /><img src="unlocked.ico" alt="lock" title="Unlocked" id="PPYLock" onclick="lockIt(this.id)" />
+        </li>
+        <li>
+          <label for="APR">APR:</label>
+          <input type="text" id="APR" onchange="change(this.id)" /><img src="unlocked.ico" alt="lock" title="Unlocked" id="APRLock" onclick="lockIt(this.id)" />
+        </li>
+        <li>
+          <label for="AMT">Amount:</label>
+          <input type="text" id="AMT" onchange="change(this.id)" /><img src="unlocked.ico" alt="lock" title="Unlocked" id="AMTLock" onclick="lockIt(this.id)" />
+        </li>
+        <li>
+          <label for="PMT">Payment:</label>
+	  <input type="text" id="PMT" onchange="change(this.id)" /><img src="unlocked.ico" alt="lock" title="Unlocked" id="PMTLock" onclick="lockIt(this.id)" />
+	  <!--<input type="checkbox" id="PMTLock" onchange="lockIt(this.id)" />-->
+        </li>
+        <li>
+          <label for="amortize">Show Amortization Table:</label>
+	  <input type="checkbox" id="amortize" onchange="makeTable()" />
+        </li>
+      </ol>
+    </fieldset>
+    <div>
+      <table id="table"></table>
+    </div>
+    <div id="preload">
+      <img src="locked.ico" width="1" height="1" alt="locked.ico" />
+      <img src="unlocked.ico" width="1" height="1" alt="unlocked.ico" />
+    </div>
+    <script type="text/javascript">change('LOAD');</script>
+    <div id="log"></div>
+  </body>
+</html>
