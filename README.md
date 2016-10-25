@@ -1,5 +1,7 @@
 ## Loancalc ##
 
+[See it in action](https://jescholl.com/loancalc)
+
 A (not-so) simple little javascript loan calculator I wrote for extra credit in two classes (javascript and finance) at PSU (hence the PSU color scheme).
 
 ### Directions ###
